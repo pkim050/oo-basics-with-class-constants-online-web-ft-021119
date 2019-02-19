@@ -9,9 +9,9 @@ class Shoe
     counter = 0
     @brand = brand
     BRANDS.each {|item| counter += 1 if item == brand}
+    binding.pry
     BRANDS << brand if counter > 0
     counter = 0
-    binding.pry
     BRANDS
   end
 
