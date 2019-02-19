@@ -10,6 +10,7 @@ class Shoe
     BRANDS.each {|item| counter += 1 if item == brand}
     BRANDS << brand if counter > 0
     counter = 0
+    BRANDS
   end
 
   def cobble
