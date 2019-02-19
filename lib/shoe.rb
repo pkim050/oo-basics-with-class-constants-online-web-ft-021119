@@ -5,9 +5,10 @@ class Shoe
   BRANDS = []
   
   def initialize(brand)
+    counter = 0
     @brand = brand
-    BRANDS << brand
-    BRANDS = BRANDS.uniq
+    BRANDS.each {|item| counter += 1 if item == brand}
+    BRANDS << brand if counter > 0
   end
 
   def cobble
